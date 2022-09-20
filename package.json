@@ -2,12 +2,18 @@
     "name": "@lumeweb/kernel-utils",
     "version": "0.1.0",
     "type": "module",
-    "main": "dist/index.js",
+    "exports": {
+        "node": {
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
+        }
+    },
     "devDependencies": {
         "@types/node": "^18.0.6",
-        "prettier": "^2.7.1"
+        "prettier": "^2.7.1",
+        "tsup": "^6.2.3"
     },
     "dependencies": {
-        "libskynet": "^0.0.62"
+        "libskynet": "https://github.com/LumeWeb/libskynet.git"
     }
 }
