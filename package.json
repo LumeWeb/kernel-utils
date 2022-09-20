@@ -3,9 +3,9 @@
     "version": "0.1.0",
     "type": "module",
     "exports": {
-        "node": {
-            "import": "./dist/index.js",
-            "require": "./dist/index.cjs"
+        ".": {
+            "import": "./dist/esm/index.js",
+            "require": "./dist/index.js"
         }
     },
     "devDependencies": {
